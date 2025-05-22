@@ -240,6 +240,7 @@ class GitHubInstance:
 
         """
         runners = self.get_runners()
+        print(f"mihasya: got this many runners: {len(runners)}")
         if runners is not None:
             for runner in runners:
                 if label in runner.labels:
